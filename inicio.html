@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html class="no-js" prefix="og: https://ogp.me/ns#" lang="pt-br">
 <head>
@@ -36,7 +37,51 @@
 		var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
 		j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
 		(window,document,'script','_gtmDataLayer','GTM-542MMSL');</script>
-		</head>
+	<style>
+		/* Estilos do formulário */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+	</style>	
+	</head>
 <body class="l wt-home ac-i ac-n l-default l-d-none b-btn-r b-btn-s-l b-btn-dn b-btn-bw-2 img-d-n img-t-u img-h-n line-solid b-e-ds lbox-d c-s-n hn-tbg wnd-free-bar-fixed  wnd-fe"><noscript>
 				<iframe
 				 src="https://www.googletagmanager.com/ns.html?id=GTM-542MMSL" 
@@ -471,7 +516,8 @@
         </main>
 		<footer class="l-f cf">
             <div class="sw cf">
-	<div class="sw-c cf"><section data-wn-border-element="s-f-border" class="s s-f s-f-edit sc-m wnd-background-image  wnd-w-default wnd-s-higher wnd-h-auto">
+	<div class="sw-c cf">
+		<section data-wn-border-element="s-f-border" class="s s-f s-f-edit sc-m wnd-background-image  wnd-w-default wnd-s-higher wnd-h-auto">
 	<div class="s-w">
 		<div class="s-o">
 			<div class="s-bg">
@@ -501,46 +547,33 @@
 </div>
 <div class="c cf" style="width:51.26%;">
 	<div class="c-c cf"><div class="b b-text cf">
-	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1><font class="wnd-font-size-70"><strong>Frase do Grupo:</strong>
-	</font></h1><blockquote class="tbq">Da Comunidade surge aqueles que quebram a realidade com mentes distorcidas.</blockquote></div>
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>
+		<font class="wnd-font-size-70"><strong>Frase do Grupo:</strong>
+	</font></h1>
+	<blockquote class="tbq">Da Comunidade surge aqueles que quebram a realidade com mentes distorcidas.</blockquote></div>
 </div>
 <div class="b b-s b-hr-line line-auto">
 	<hr class="line-style line-color">
 </div>
 <div class="b b-text cf">
 	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p class="wnd-align-center"><strong>
-		<font class="wnd-font-size-110">Mande o seu email.</font>
+		<font class="wnd-font-size-110">Mande a sua dúvida.</font>
 	</strong>
 </p>
 </div>
 </div>
 <div class="form b b-s b-form-default f-rh-normal f-rg-normal f-br-none default cf">
-	<form action="" method="post">
-
-		<fieldset class="form-fieldset">
-			<div>
-				<div class="form-input form-email cf wnd-form-field wnd-required">
-	<label for="field-wnd_EmailField_904423261">
-		<span class="it b link">
-	<span class="it-c">E-mail</span>
-</span>
-</label>
-	<input id="field-wnd_EmailField_904423261" name="wnd_EmailField_904423261" required value="@" type="email" maxlength="255">
-</div>
-</div>
-		</fieldset>
-
-		
-
-		<div class="form-submit b-btn cf b-btn-fs b-btn-4">
-			<button class="b-btn-l" type="submit" name="send" value="wnd_FormBlock_456902067">
-				<span class="form-submit-text b-btn-t">Enviar</span>
-			</button>
-		</div>
-
-	</form>
-
-    
+<form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
     
 </div>
@@ -583,5 +616,6 @@
         </footer>
 
 <script src="https://d1di2lzuh97fh2.cloudfront.net/files/0k/0k9/0k9khp.js?ph=bba60a8d7a" crossorigin="anonymous" type="module"></script><script>document.querySelector(".wnd-fe")&&[...document.querySelectorAll(".c")].forEach((e=>{const t=e.querySelector(".b-text:only-child");t&&""===t.querySelector(".b-text-c").innerText&&e.classList.add("column-empty")}))</script>
+
 </body>
 </html>
